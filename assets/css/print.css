@@ -1,0 +1,26 @@
+@media print {
+    body {
+        font-size: 12pt;
+        color: black;
+        background: white;
+    }
+
+    nav, .sidebar, .footer {
+        display: none; /* Masquer les éléments non nécessaires */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+    <image>
+        <src>assets/images/cristiano1.jpg</src>
+        <alt>Cristiano Ronaldo en action</alt>
+    </image>
+    <image>
+        <src>assets/images/cristiano2.jpg</src>
+        <alt>Cristiano Ronaldo célébrant un but</alt>
+    </image>
+    <image>
+        <src>assets/images/cristiano3.jpg</src>
+        <alt>Cristiano Ronaldo en action</alt>
+    </image>
+    <image>
+        <src>assets/images/cristiano4.jpg</src>
+        <alt>Cristiano Ronaldo en action</alt>
+    </image>
+</images>

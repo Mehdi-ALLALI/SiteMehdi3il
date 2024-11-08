@@ -1,0 +1,41 @@
+/* Cacher le menu sur mobile */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block; /* Affiche le menu burger sur mobile */
+    }
+
+    .nav-links {
+        display: none; /* Cache les liens de navigation par défaut */
+        flex-direction: column;
+        background-color: #b22222;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav ul{
+        display: none;
+    }
+    .nav-links.active {
+        display: flex; /* Affiche les liens quand le menu est actif */
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px 0;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-links li a:hover {
+        background-color: #228b22; /* Change la couleur de fond en vert lors du survol */
+        color: #fff; /* Assure que le texte reste blanc */
+    }
+}
