@@ -31,7 +31,7 @@ class UserController{
             
             exit();
         } else {
-            // Identifiant ou mot de passe incorrect
+            
             echo "Identifiant ou mot de passe incorrect.";
         }
     

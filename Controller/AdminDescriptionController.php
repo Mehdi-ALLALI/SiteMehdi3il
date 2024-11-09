@@ -15,33 +15,29 @@ class AdminDescriptionController {
     }
 
     static function createImage() {
-        // Logique pour créer une nouvelle image
         if (isset($_FILES['image'], $_POST['description'])) {
-            $description = $_POST['description']; // Si vous avez besoin de cette description
-            $targetDir = "assets/images/"; // Dossier où les images seront stockées
+            $description = $_POST['description']; 
+            $targetDir = "assets/images/"; 
             $fileName = basename($_FILES['image']['name']);
             $targetFilePath = $targetDir . $fileName;
     
-            // Vérifier si le fichier est une image
             $imageFileType = strtolower(pathinfo($targetFilePath, PATHINFO_EXTENSION));
-            $allowedTypes = ['jpg', 'jpeg', 'png', 'gif']; // Types de fichiers autorisés
+            $allowedTypes = ['jpg', 'jpeg', 'png', 'gif']; 
     
             if (in_array($imageFileType, $allowedTypes)) {
-                // Vérifier si le dossier existe
                 if (!file_exists($targetDir)) {
-                    mkdir($targetDir, 0755, true); // Créer le dossier si nécessaire
+                    mkdir($targetDir, 0755, true); 
                 }
     
-                // Déplacer le fichier téléchargé
+                
                 if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFilePath)) {
-                    // Stocker l'URL de l'image et la description "nouvelle_image" dans la base de données
                     $imageData = [
                         'url' => $targetFilePath,
-                        'description' => 'nouvelle_image' // Ici, nous définissons la description
+                        'description' => 'nouvelle_image' 
                     ];
-                    DescriptionModel::createImage($imageData); // Enregistrement dans la base de données
+                    DescriptionModel::createImage($imageData); 
     
-                    // Rediriger vers la page description pour afficher le nouvel ajout
+                    
                     header('Location:?controller=description&action=descriptionRoute');
                     exit();
                 } else {

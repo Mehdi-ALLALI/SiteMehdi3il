@@ -8,7 +8,6 @@
 <section id="statistiques">
     <h2>Statistiques Clés</h2>
     <?php echo '<p>' . ($pageData['stats']) . '</p>'; ?>
-    <!-- Intégrer des statistiques en AJAX ou par une future base de données -->
 </section>
 
 
@@ -30,7 +29,6 @@
 <section id="actualites">
     <h2>Dernières Nouvelles</h2>
     <p><?php echo htmlspecialchars($pageData['nouvelles']); ?></p>
-    <!-- Zone pour intégrer des news en AJAX -->
 </section>
 
 <section id="saviez-vous">

@@ -1,11 +1,11 @@
-/* Cacher le menu sur mobile */
+
 @media (max-width: 768px) {
     .burger-menu {
-        display: block; /* Affiche le menu burger sur mobile */
+        display: block; 
     }
 
     .nav-links {
-        display: none; /* Cache les liens de navigation par défaut */
+        display: none; 
         flex-direction: column;
         background-color: #b22222;
         position: absolute;
@@ -19,7 +19,7 @@
         display: none;
     }
     .nav-links.active {
-        display: flex; /* Affiche les liens quand le menu est actif */
+        display: flex; 
     }
 
     .nav-links li {
@@ -35,7 +35,18 @@
     }
 
     .nav-links li a:hover {
-        background-color: #228b22; /* Change la couleur de fond en vert lors du survol */
-        color: #fff; /* Assure que le texte reste blanc */
+        background-color: #228b22; 
+        color: #fff; 
+    }
+}
+
+@media (max-width: 768px) {
+    .palmares-container {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .palmares-container img {
+        width: 100%; 
     }
 }

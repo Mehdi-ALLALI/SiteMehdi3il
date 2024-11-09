@@ -1,5 +1,4 @@
 <main>
-    <!-- Section Contact -->
     <section id="contact">
         <h2>Contactez-nous</h2>
         <form action="submit_contact.php" method="POST">
